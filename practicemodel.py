@@ -127,6 +127,15 @@ for agent0 in agents:
         
 ############################################################
 
+f2 = open('environmentout.csv', 'w', newline='') 
+writer = csv.writer(f2, delimiter=' ')
+for row in environment:		
+	writer.writerow(row)		# List of values.
+f2.close()
+
+#This code writes the final environment state into a new file
+
+
 
 
 
